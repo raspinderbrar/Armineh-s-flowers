@@ -14,7 +14,7 @@ function showTasks() {
         let checked = "";
         if (tasks[i].done === true) {
             checked = "checked";
-    }
+        }
 
     html = html + "<li><label><input type='checkbox' " + checked + " onclick='toggleTask(" + i + ")'> " + tasks[i].name +"</label></li>";
     }
@@ -26,3 +26,4 @@ function toggleTask(i) {
     showTasks();
 }
 
+showTasks();
