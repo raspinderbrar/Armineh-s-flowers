@@ -6,6 +6,12 @@ let tasks = [
     { name: "Add flower food", done: false },
 ];
 
+let saved = localStorage.getItem("tasks");
+        
+if (saved !== null) {
+    tasks = JSON.parse(saved);
+}
+
 function showTasks() {
     let taskList = document.getElementById("taskList");
     let html = "";
@@ -23,7 +29,10 @@ function showTasks() {
 
 function toggleTask(i) {
     tasks[i].done = !tasks[i].done;
+    localStorage.setItem("tasks", JSON.stringify(tasks));
     showTasks();
 }
+
+
 
 showTasks();
