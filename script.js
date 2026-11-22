@@ -1,4 +1,11 @@
 
+        let flowers = [
+            {name: "Seasonal Dryness", price: 85, image:"bouquet.jpg", alt:"Bouquet of dried seasonal flowers"},
+            {name: "Starry Night", price: 150, image:"starrynight.jpg", alt:"Deep blue and white flower arrangement"},
+            {name: "Love", price: 125, image:"love.jpg", alt:"Bouquet of red roses"},
+            {name: "Peace", price: 125, image:"peace.jpg", alt:"Bouquet of white roses"}
+        ];
+
         let total = 0;
         let order = [];
         let saved = localStorage.getItem("order");
@@ -105,5 +112,25 @@
             }
         }
 
-        updatePage();
-    
+        function showFlowers() {
+            let flowerList = document.getElementById("flowerList");
+            let html = "";
+
+            for (let i = 0; i < flowers.length; i++) {
+                html = html +
+                    "<div class='card'>" +
+                        "<img src='" + flowers[i].image + "' alt='" + flowers[i].alt + "'>" +
+                        "<h3>" + flowers[i].name + "</h3>" +
+                        "<p>Price: $" + flowers[i].price + " / month</p>" +
+                        "<a href='#' class='button' onclick='orderFlower(" + i + ")'>Order</a>" +
+                    "</div>";      
+            }
+            flowerList.innerHTML = html;
+        }
+
+        function orderFlower(i) {
+            addToOrder(flowers[i].name, flowers[i].price);
+        }
+
+        updatePage(); 
+        showFlowers();
