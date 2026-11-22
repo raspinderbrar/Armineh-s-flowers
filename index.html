@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Armineh Flowers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Armineh Flowers</h1>
+    <p class="tagline">Luxury flower subscriptions</p>
+    <h2>Our Flowers</h2>
+    <a href="#" class="button">Order Now</a>
+    <p id="message"></p>
+
+    <div class="summary">
+        <p id="total" class="box">Total: $0 / month</p>
+        <p id="count" class="box">Count: 0</p>
+        <a href="#" class="button" onclick="resetOrder()">Reset</a>
+    </div>
+
+    <ul id="orderList" class="box"></ul>
+    <p id="delivery"></p>
+    <div class="bar">
+        <div id="barFill"></div>
+    </div>
+
+    <div class="checkout">
+        <h2>Delivery details</h2>
+
+        <label for="customerName">Your name</label>
+        <input type="text" id="customerName">
+
+        <label for="address">Delivery address</label>
+        <input type="text" id="address">
+
+        <label for="deliveryDate">Delivery date</label>
+        <input type="date" id="deliveryDate">
+
+        <button type="button" class="button" onclick="placeOrder()">Place order</button>
+
+        <p id="confirmation"></p>
+
+    </div>
+
+    <div class="flowers">
+        <div class="card">
+            <img src="bouquet.jpg" alt="...">
+            <h3>Seasonal Dryness</h3>
+            <p>$85 / month</p>
+            <a href="#" class="button" onclick="addToOrder('Seasonal Dryness', 85)">Order</a>
+        </div>
+
+        <div class="card">
+            <img src="starrynight.jpg" alt="...">
+            <h3>Starry Night</h3>
+            <p>$150 / month</p>
+            <a href="#" class="button" onclick="addToOrder('Starry Night', 150)">Order</a>
+        </div>
+
+        <div class="card">
+            <img src="love.jpg" alt="...">
+            <h3>Love</h3>
+            <p> $125 / month</p>
+            <a href="#" class="button" onclick="addToOrder('Love', 125)">Order</a>
+        </div>
+    </div>
+    <a href="https://www.instagram.com/oneflowerstop/">instagram</a>
+    <script src="script.js"></script>
+</body>
+</html>
