@@ -10,7 +10,7 @@ function showTasks() {
     let taskList = document.getElementById("taskList");
     let html = "";
 
-    for (let i = 0: i < tasks.length; i++) {
+    for (let i = 0; i < tasks.length; i++) {
         let checked = "";
         if (tasks[i].done === true) {
             checked = "checked";
