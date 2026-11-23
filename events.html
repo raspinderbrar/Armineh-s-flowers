@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name = "viewport" content="width=device-width, initial-scale=1">
-        <title>Events | Armineh Flowers</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>Events</h1>
 
-        <div class="summary">
-            <p id="total" class="box">Total: $0</p>
-            <p id="count" class="box">Count: 0</p>
-            <a href="#" class="button" onclick="resetOrder()">Reset</a>
-        </div>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Events | Armineh Flowers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-        <h2>My event order</h2>
-        <ul id="bookList" class="box"></ul>
+<body>
+    <h1>Events</h1>
 
-        <div class="flowers" id="eventItems"></div>
+    <div class="summary">
+        <p id="total" class="box">Total: $0</p>
+        <p id="count" class="box">Count: 0</p>
+        <a href="#" class="button" onclick="resetOrder()">Reset</a>
+    </div>
 
-        <a href="index.html" class="button">Back to Home</a>
+    <h3>Planning Checklist</h3>
+    <p id="planProgress"></p>
+    <ul id="planList"></ul>
 
-        <script src="events.js"></script>
-    </body>
+    <h2>My event order</h2>
+
+    <ul id="bookList" class="box"></ul>
+
+    <div class="flowers" id="eventItems"></div>
+
+
+
+
+    <a href="index.html" class="button">Back to Home</a>
+
+    <script src="events.js"></script>
+</body>
 
 </html>
