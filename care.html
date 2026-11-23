@@ -8,10 +8,14 @@
     <body>
         <h1>Flower Care</h1>
         <p class="tagline">Keep your bouquet fresh for longer</p>
-
+        <button class="button" onclick="chooseList('fresh')">Fresh Flowers</button>
+        <button class="button" onclick="chooseList('dried')">Dried Flowers</button>
         <p id="progress"></p>
+        <div class="bar">
+            <div id="barFill"></div>
+        </div>
         <ul id="taskList"></ul>
-
+        <button class="button" onclick="startOver()">Start over</button>
         <a href="index.html" class="button">Back to Home</a>
 
         <script src="care.js"></script>
