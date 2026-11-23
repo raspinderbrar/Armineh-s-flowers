@@ -26,10 +26,21 @@ if (savedDried !== null) {
 }
 
 let currentList = "fresh";
+
+let savedList = localStorage.getItem("currentList");
+if (savedList !== null) {
+    currentList = savedList;
+}
+
 let tasks = freshTasks;
+if (currentList === "dried") {
+    tasks = driedTasks;
+}
 
 function chooseList(name) {
     currentList = name;
+
+    localStorage.setItem("currentList", name);
 
     if (name === "fresh") {
         tasks = freshTasks;
@@ -74,6 +85,17 @@ function showTasks() {
         barFill.style.backgroundColor = "#8fb38a";
     } else {
         barFill.style.backgroundColor = "#d4a373";
+    }
+
+    let freshBtn = document.getElementById("freshBtn");
+    let driedBtn = document.getElementById("driedBtn");
+
+    if (currentList === "fresh") {
+        freshBtn.classList.add("active");
+        driedBtn.classList.remove("active");
+    } else {
+        driedBtn.classList.add("active");
+        freshBtn.classList.remove("active");
     }
 }
 

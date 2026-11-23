@@ -167,3 +167,8 @@
             margin-top: 4px;
             border: none;
         }
+
+        .active {
+            background-color: #d4a373;
+            color: #300b16;
+        }
