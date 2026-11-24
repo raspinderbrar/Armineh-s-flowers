@@ -2,6 +2,36 @@
             box-sizing: border-box;
         }
 
+        header {
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            padding: 20px 40px;
+            border-bottom: 1px solid #d4a373;
+        }
+
+        header a {
+            color: #F5efe9;
+            font-size: 13px;
+            letter-spacing: 2px;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .nav-left,
+        .nav-right {
+            flex: 1;
+        }
+
+        .nav-right {
+            text-align: right;
+        }
+
+        .logo {
+            font-family: "Cormorant Garamond", serif;
+            font-size: 28px;
+        }
+
         body {
             font-family: Arial, sans-serif;
             background-color: #44362f;
@@ -172,5 +202,3 @@
             background-color: #d4a373;
             color: #300b16;
         }
-
-       
