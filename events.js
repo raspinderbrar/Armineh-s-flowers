@@ -31,6 +31,31 @@ for (let i = 0; i < book.length; i++) {
     total = total + book[i].price;
 }
 
+function checkBudget() {
+    let budget = Number(document.getElementById("budgetInput").value);
+    let message = document.getElementById("messageInput");
+
+    if(budget >= total) {
+        message.textContent = "You're $" + (budget - total) + " under budget";
+    } else {
+        message.textContent = "You're $" + (total - budget) + " over budget";
+    }
+}
+
+function checkBudget() {
+    let typed = document.getElementById("budgetInput").value;     
+    let budget = Number(typed);                                       
+    let message = document.getElementById("budgetMessage");
+
+    if (typed === "") {                                           
+        message.textContent = "Please enter your budget.";
+    } else if (budget >= total) {                                      
+        message.textContent = "You're $" + (budget - total) + " under budget 🎉";
+    } else {                                                         
+        message.textContent = "You're $" + (total - budget) + " over budget";
+    }
+}
+
 function showEvents() {
     let eventItems = document.getElementById("eventItems");
     let html = "";
