@@ -124,7 +124,7 @@ h2 {
 
 }
 
-.inquiry option {
+.inquiry  {
     color: #300b16;
 }
 
@@ -138,37 +138,4 @@ h2 {
     color: #f5efe9;
     font-family: inherit;
     margin-top: 6px;
-}
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    font-size: 13px;
-    letter-spacing: 2px;
-    border-top: 1px solid #d4a373;
-}
-
-footer a {
-    margin-left: 20px;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline #7a9cc6;
-}
-
-@media (max-width: 600px) {
-    footer {
-        flex-direction: column;
-    }
-
-    footer a {
-        margin: 0 10px;
-    }
-}
-
-footer a i {
-    font-size: 18px;
 }

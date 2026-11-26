@@ -1,0 +1,72 @@
+.intro {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 100px 20px;
+}
+
+.intro h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.intro p {
+    line-height: 1.8;
+}
+
+.categories {
+    padding: 80px 40px;
+}
+
+.categoryGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.category {
+    padding: 30px 20px;
+    border-top: 1px solid #d4a373;
+}
+ 
+.category h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.category a {
+    color: #d4a373;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+@media (max-width: 900px) {
+    .categoryGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .categoryGrid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.speak {
+    background-color: #300b16;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.speak h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.speak a {
+    font-size: x-large;
+    border-radius: 10%;
+}

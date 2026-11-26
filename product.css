@@ -1,0 +1,92 @@
+.product {
+    display: flex;
+    gap: 40px;
+    padding: 60px 40px;
+    text-align: left;
+}
+
+#mainPhoto {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.productInfo h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 44px;
+    font-weight: 400;
+}
+
+.price {
+    color: #d4a373;
+    font-size: 22px;
+}
+
+
+.productPhotos {
+    text-align: left;
+    width: 50%;
+}
+
+.thumbs {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.thumb {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.thumb:hover {
+    opacity: 0.7;
+}
+
+.orderOptions {
+    font-family: "Cormorant Garamond", serif;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.orderOptions select,
+.orderOptions input,
+.orderOptions textarea {
+    width: 100%;
+    border: 1px solid #d4a373;
+    color: #f5efe9;
+    padding: 12px;
+    background-color: transparent;
+    font-family: inherit;
+    margin-top: 6px;
+}
+
+.orderOptions label {
+    text-align: left;
+    display: block;
+    margin-top: 6px;
+}
+
+#totalPrice {
+    color: #d4a373;
+    font-size: larger;
+    text-align: center;
+}
+
+.orderOptions option {
+    color: #300b16;
+}
+
+@media (max-width: 900px) {
+    .product {
+        flex-direction: column;
+    }
+
+    .productPhotos {
+        width: 100%;
+    }
+}

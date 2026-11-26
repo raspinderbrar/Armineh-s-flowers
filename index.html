@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Armineh Flowers</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -12,7 +13,7 @@
 <body>
     <header>
         <nav class="nav-left">
-            <a href="index.html">shop</a>
+            <a href="shop.html">shop</a>
             <a href="events.html">events</a>
             <a href="studio.html">studio</a>
             <a href="care.html">care</a>
@@ -26,48 +27,48 @@
             </a>
         </div>
     </header>
-    <h1>Armineh Flowers</h1>
-    <p class="tagline">Luxury flower subscriptions</p>
-    <h2>Our Flowers</h2>
-    <a href="#" class="button">Order Now</a>
-    <p id="message"></p>
-
-    <div class="summary">
-        <p id="total" class="box">Total: $0 / month</p>
-        <p id="count" class="box">Count: 0</p>
-        <a href="#" class="button" onclick="resetOrder()">Reset</a>
-    </div>
-
-    <ul id="orderList" class="box"></ul>
-    <p id="delivery"></p>
-    <div class="bar">
-        <div id="barFill"></div>
-    </div>
-
-    <div class="checkout">
-        <h2>Delivery details</h2>
-
-        <label for="customerName">Your name</label>
-        <input type="text" id="customerName">
-
-        <label for="address">Delivery address</label>
-        <input type="text" id="address">
-
-        <label for="deliveryDate">Delivery date</label>
-        <input type="date" id="deliveryDate">
-
-        <button type="button" class="button" onclick="placeOrder()">Place order</button>
-
-        <p id="confirmation"></p>
-
-    </div>
-
-    <div class="flowers" id="flowerList"></div>
-    <a href="studio.html" class="button">Event studio</a>
-    <a href="events.html" class="button">Events</a>
-    <a href="https://www.instagram.com/oneflowerstop/">instagram</a>
-    <a href="care.html" class="button">Flower Care tips</a>
-    <script src="script.js"></script>
+    <section class="intro">
+        <h1>Luxury flowers</h1>
+        <p>intentional designes made to feel unreal</p>
+    </section>
+    <section class="categories">
+        <div class="category">
+            <h3>Fresh flowers</h3>
+            <a href="shop.html">shop now</a>
+        </div>
+        <div class="category">
+            <h3>Dried flowers</h3>
+            <a href="shop.html">shop now</a>
+        </div>
+        <div class="category">
+            <h3>Events</h3>
+            <a href="shop.html">shop now</a>
+        </div>
+        <div class="category">
+            <h3>Studio</h3>
+            <a href="shop.html">shop now</a>
+        </div>
+    </section>
+    <section class="speak">
+        <h2>Planning something special?</h2>
+        <p>message us anytime, we're happy to help</p>
+        <p>Speak to us
+        </p>
+        <a href="https://wa.me/1YOURNUMBER" class="button" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <footer>
+            <p>© 2026 Armineh Flowers</p>
+            <div>
+                <a href="mailto:hello@example.com">email</a>
+                <a href="tel:+16045551234">phone</a>
+                <a href="shop.html" class="button">Shop</a>
+                <a href="https://www.instagram.com/oneflowerstop/" target="_blank" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </footer>
+    </section>
 </body>
 
 </html>
